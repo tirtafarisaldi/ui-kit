@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npx nx run-many -t lint --projects=*-ui --exclude excluded-app
+npx nx run-many -t test --projects=*-ui --exclude excluded-app

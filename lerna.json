@@ -1,0 +1,61 @@
+{
+  "version": "independent",
+  "lerna": "4.0.0",
+  "npmClient": "yarn",
+  "useNx": true,
+  "packages": [
+    "libs/*"
+  ],
+  "command": {
+    "version": {
+      "conventionalCommits": true,
+      "changelogPreset": {
+        "name": "conventionalcommits",
+        "types": [
+          {"type": "feat", "section": "Features"},
+          {"type": "feature", "section": "Features"},
+          {"type": "fix", "section": "Bug Fixes"},
+          {"type": "hotfix", "section": "Bug Fixes"},
+          {"type": "refactor", "section": "Code Refactoring"},
+          {"type": "docs", "section": "Documentation"},
+          {"type": "style", "section": "Styles"},
+          {"type": "perf", "section": "Performance Improvements"},
+          {"type": "test", "hidden": true},
+          {"type": "chore", "section": "Chores"}
+        ]
+      }
+    },
+    "publish": {
+      "registry": "https://registry.npmjs.org",
+      "allowBranch": ["master", "release"],
+      "conventionalCommits": true,
+      "exact": true,
+      "message": "chore(release): publish",
+      "changelogPreset": {
+        "name": "conventionalcommits",
+        "types": [
+          {"type": "feat", "section": "Features"},
+          {"type": "feature", "section": "Features"},
+          {"type": "fix", "section": "Bug Fixes"},
+          {"type": "hotfix", "section": "Bug Fixes"},
+          {"type": "refactor", "section": "Code Refactoring"},
+          {"type": "docs", "section": "Documentation"},
+          {"type": "style", "section": "Styles"},
+          {"type": "perf", "section": "Performance Improvements"},
+          {"type": "test", "hidden": true},
+          {"type": "chore", "section": "Chores"}
+        ]
+      },
+      "ignoreChanges": [
+        "**/__fixtures__/**",
+        "**/__tests__/**",
+        "**/__mocks__/**",
+        "*.test.{js,jsx,ts,tsx}",
+        "*.mock.{js,jsx,ts,tsx}",
+        "**/*.md",
+        "**/.storybook/**",
+        "*.stories.tsx"
+      ]
+    }
+  }
+}

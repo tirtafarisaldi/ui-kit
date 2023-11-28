@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "fortune-ui": ["libs/fortune-ui/src/index.ts"],
+      "foundation-ui": ["libs/foundation-ui/src/index.ts"],
+      "global-ui": ["libs/global-ui/src/index.ts"],
+      "popbela-ui": ["libs/popbela-ui/src/index.ts"],
+      "popmama-ui": ["libs/popmama-ui/src/index.ts"],
+      "yummy-ui": ["libs/yummy-ui/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

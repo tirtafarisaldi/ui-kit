@@ -1,0 +1,15 @@
+{
+  "name": "@idn-media/foundation-uikit",
+  "version": "1.0.0",
+  "description": "Foundation uikit IDN",
+  "author": "IDN MEDIA",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IDN-Media/idn-ui-kit",
+    "directory": "libs/foundation-ui"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
